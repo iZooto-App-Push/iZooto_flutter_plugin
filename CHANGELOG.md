@@ -56,6 +56,7 @@
 
 ## 2.5.0 32th release(Notification Permissio issues fixed and Sender ID issues fixed)[ 06 May 2024]
 
+## 2.5.1 33th release(Notification Permission issues fixed)[ 04 June 2024]
 
 
 
