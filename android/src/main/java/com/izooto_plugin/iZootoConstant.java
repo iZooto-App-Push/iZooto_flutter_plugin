@@ -2,35 +2,39 @@ package com.izooto_plugin;
 
 public interface iZootoConstant {
 
-    String SETSUBSCRIPTION = "iZootoSetSubscription";
-    String FIREBASEANLYTICS = "iZootoFirebaseAnalytics";
-    String ADDEVENTS = "iZootoAddEvents";
-    String ADDPROPERTIES = "iZootoAddProperties";
-    String ADDTAGS = "iZootoAddTags";
-    String REMOVETAG="iZootoRemoveTags";
-    String iZOOTO_HANDLE_NOTIFICATION = "iZootoHandleNotification";
-    String iZOOTO_RECEIVED_PAYLOAD = "receivedPayload";
-    String iZOOTO_OPEN_NOTIFICATION="openNotification";
-    String iZOOTO_DEVICE_TOKEN="onToken";
-    String iZOOOTO_HANDLE_WEBVIEW="handleLandingURL";
-    String EVENT_NAME = "eventName";
-    String EVENT_VALUE="eventValue";
-    String iZOOTO_PLUGIN_NAME="izooto_flutter";
-    String Notification_SOUND="notificationSound";
-    String IZOOTO_DEFAULT_TEMPLATE = "izootoDefaultTemplate";
-    String ANDROID_INITIALISE_WITH_TOKEN = "iZootoAndroidInitWithToken";
-    String IZOOTO_DEFAULT_NOTIFICATION_BANNER = "izootoDefaultNotificationBanner";
-    String IZ_PLUGIN_VERSION ="fv_2.5.1";
-    String IZ_ANDROID_INIT = "iZootoAndroidInit";
-    String NOTIFICATION_PERMISSION="notificationPermission";
-    String PLUGIN_EXCEPTION ="PluginException";
+    String IZ_ANDROID_INIT ="iZootoAndroidInit";
+    String IZ_SET_SUBSCRIPTION = "iZootoSetSubscription";
+    String IZ_FIREBASE_ANALYTICS = "iZootoFirebaseAnalytics";
+    String IZ_ADD_EVENTS = "iZootoAddEvents";
+    String IZ_ADD_PROPERTIES = "iZootoAddProperties";
+    String IZ_ADD_TAGS = "iZootoAddTags";
+    String IZ_REMOVE_TAG="iZootoRemoveTags";
+    String IZ_HANDLE_NOTIFICATION = "iZootoHandleNotification";
+    String IZ_RECEIVED_PAYLOAD = "receivedPayload";
+    String IZ_OPEN_NOTIFICATION="openNotification";
+    String IZ_DEVICE_TOKEN="onToken";
+    String IZ_HANDLE_WEB_VIEW="handleLandingURL";
+    String IZ_EVENT_NAME = "eventName";
+    String IZ_EVENT_VALUE="eventValue";
+    String IZ_PLUGIN_NAME="izooto_flutter";
+    String IZ_NOTIFICATION_SOUND="notificationSound";
+    String IZ_DEFAULT_TEMPLATE = "izootoDefaultTemplate";
+    String IZ_DEFAULT_NOTIFICATION_BANNER = "izootoDefaultNotificationBanner";
+    String IZ_PLUGIN_VERSION ="fv_2.5.2";
+    String IZ_NOTIFICATION_PERMISSION="notificationPermission";
+    String IZ_PLUGIN_EXCEPTION ="PluginException";
     String IZ_CHANNEL_NAME = "setNotificationChannelName";
     String IZ_NAVIGATE_SETTING = "navigateToSettings";
     String IZ_NOTIFICATION_DATA = "getNotificationFeed";
     String IZ_IS_PAGINATION = "isPagination";
-    String IZ_PLUGIN_EXCEPTION ="PluginException";
-    String IZ_HANDLE_WEB_VIEW="handleLandingURL";
+    String IZ_API_LEVEL_ERROR = "Api level is lower than 33";
 
-
+    // OneTap support
+    String IZ_REQUEST_ONE_TAP_ACTIVITY = "requestOneTapActivity";
+    String IZ_SYNC_USER_DETAILS = "syncUserDetails";
+    String IZ_EMAIL = "email";
+    String IZ_FIRST_NAME = "firstName";
+    String IZ_LAST_NAME = "lastName";
+    String IZ_ONE_TAP_CALLBACK = "oneTapCallback";
 
 }

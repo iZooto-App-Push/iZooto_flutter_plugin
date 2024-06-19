@@ -12,6 +12,8 @@ typedef void ReceiveNotificationParam(String? payload);
 typedef void OpenedNotificationParam(String? data);
 typedef void TokenNotificationParam(String? token);
 typedef void WebViewNotificationParam(String? landingUrl);
+typedef void OneTapResponse(String? response);
+
 const  String PLUGIN_NAME ="izooto_flutter";
 const String RECEIVE_PAYLOAD ="receivedPayload";//receivedPayload
 const String ADDUSERPROPERTIES ="addUserProperties";
@@ -42,6 +44,14 @@ const  IZ_NAVIGATE_SETTING = "navigateToSettings";
 const IZ_GET_NOTIFICATION_FEED = "getNotificationFeed";
 const IZ_IS_PAGINATION = "isPagination";
 
+// OneTap support
+const String IZ_REQUEST_ONE_TAP_ACTIVITY = "requestOneTapActivity";
+const String IZ_SYNC_USER_DETAILS = "syncUserDetails"; // android/ios
+const String IZ_EMAIL = "email";
+const String IZ_FIRST_NAME = "firstName";
+const String IZ_LAST_NAME = "lastName";
+const String IZ_ONE_TAP_CALLBACK = "oneTapCallback";
+
 
 
 // handle the text-overlay template
@@ -53,6 +63,8 @@ class iZooto {
   static OpenedNotificationParam? notificationOpenedData;
   static TokenNotificationParam? notificationToken;
   static WebViewNotificationParam? notificationWebView;
+    static OneTapResponse? dataResponse;
+
 
 
   iZooto() {
@@ -143,6 +155,38 @@ class iZooto {
   static navigateToSettings() async {
     _channel.invokeMethod(IZ_NAVIGATE_SETTING);
   }
+
+ // OneTap Activity Request
+  static Future<void> requestOneTapActivity() async {
+    await _channel.invokeMethod(IZ_REQUEST_ONE_TAP_ACTIVITY);
+  }
+
+  // OneTap callback Response
+  void oneTapResponse(OneTapResponse response) {
+     dataResponse = response;
+    _channel.invokeMethod(IZ_ONE_TAP_CALLBACK);
+  }
+  
+  // Method to get user details Android/iOSsyncUserDetailsEmail
+  static syncUserDetailsEmail(String email, String firstName, String lastName){
+    if (Platform.isAndroid){
+    Map<String, String> userConfigs = { IZ_EMAIL : email, IZ_FIRST_NAME : firstName, IZ_LAST_NAME : lastName };
+    _channel.invokeMethod(IZ_SYNC_USER_DETAILS, userConfigs);
+  }
+  else{
+      _channel.invokeMethod(IZ_SYNC_USER_DETAILS, {
+      'email': email,
+      'fName': firstName,
+      'lName':lastName,
+    });  
+  }
+  }
+
+
+
+
+
+
   static Future<void> setFirebaseAnalytics(bool enable) async {
     await _channel.invokeMethod(FIREBASEANALYTICS, enable);
   }
@@ -214,6 +258,9 @@ class iZooto {
     } else if (methodCall.method == HANDLELANDINGURL &&
         notificationWebView != null) {
       notificationWebView!(methodCall.arguments);
+    }
+    else if (methodCall.method == IZ_ONE_TAP_CALLBACK && dataResponse != null){
+        dataResponse!(methodCall.arguments);
     }
   }
 }

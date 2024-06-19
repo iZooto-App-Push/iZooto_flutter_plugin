@@ -110,6 +110,11 @@ class _HomeState extends State<Home> {
       print('iZooto Flutter Token : $token ');
     });
 
+    iZooto.requestOneTapActivity();
+    iZooto.shared.oneTapResponse((response) {
+      print(response);
+    });
+
 
     //iOS DeepLink Killed state code
     try {

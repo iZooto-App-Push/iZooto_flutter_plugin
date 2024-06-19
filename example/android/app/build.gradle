@@ -24,7 +24,7 @@ apply plugin: 'com.android.application'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
-    compileSdkVersion 33
+    compileSdk 34
 
     lintOptions {
         disable 'InvalidPackage'
@@ -37,7 +37,7 @@ android {
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         manifestPlaceholders = [
-                izooto_app_id : "09f06385e06cc10d0fc7a5e1c002cd9338a2c94f"
+                izooto_app_id : "f8908fd9817ad7f76dea934067955773a8f1c3d5"
         ]
         multiDexEnabled true
 
@@ -53,5 +53,11 @@ android {
 
 flutter {
     source '../..'
+}
+
+dependencies {
+    implementation "androidx.credentials:credentials:1.2.2"
+    implementation "androidx.credentials:credentials-play-services-auth:1.2.2"
+    implementation "com.google.android.libraries.identity.googleid:googleid:1.1.0"
 }
 apply plugin: 'com.google.gms.google-services'

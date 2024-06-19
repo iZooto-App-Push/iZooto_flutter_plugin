@@ -17,13 +17,18 @@ rootProject.allprojects {
     repositories {
         google()
         mavenCentral()
+        maven { url "http://download.flutter.io"
+            allowInsecureProtocol = true
+
+        }
+
     }
 }
 
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 33
+    compileSdk 34
 
     defaultConfig {
         minSdkVersion 21
@@ -33,7 +38,7 @@ android {
     }
 }
 dependencies {
-    implementation 'com.izooto:android-sdk:2.4.5'
+    implementation 'com.izooto:android-sdk:2.5.1'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.firebase:firebase-messaging:23.2.1'
     implementation 'com.google.code.gson:gson:2.8.9'
