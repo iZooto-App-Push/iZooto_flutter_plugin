@@ -20,7 +20,7 @@ public interface iZootoConstant {
     String IZ_NOTIFICATION_SOUND="notificationSound";
     String IZ_DEFAULT_TEMPLATE = "izootoDefaultTemplate";
     String IZ_DEFAULT_NOTIFICATION_BANNER = "izootoDefaultNotificationBanner";
-    String IZ_PLUGIN_VERSION ="fv_2.5.2";
+    String IZ_PLUGIN_VERSION ="fv_2.5.3";
     String IZ_NOTIFICATION_PERMISSION="notificationPermission";
     String IZ_PLUGIN_EXCEPTION ="PluginException";
     String IZ_CHANNEL_NAME = "setNotificationChannelName";

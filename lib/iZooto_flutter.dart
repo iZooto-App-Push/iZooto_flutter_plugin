@@ -103,6 +103,7 @@ class iZooto {
     });
     
   }
+  //this method used for device token regsiter/unregister
   static setSubscription(bool enable) async {
     _channel.invokeMethod(SETSUBSCRIPTION,enable);
   }
@@ -181,11 +182,6 @@ class iZooto {
     });  
   }
   }
-
-
-
-
-
 
   static Future<void> setFirebaseAnalytics(bool enable) async {
     await _channel.invokeMethod(FIREBASEANALYTICS, enable);

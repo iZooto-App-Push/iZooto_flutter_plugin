@@ -58,6 +58,8 @@
 
 ## 2.5.1 33th release(Notification Permission issues fixed)[ 04 June 2024]
 ## 2.5.2 34th release(Support FCM Receiver and Google one tap)[ 19 June 2024]
+## 2.5.3 35th release(iOS -Support FCM Receiver and Google one tap)[ 03 July 2024]
+
 
 
 

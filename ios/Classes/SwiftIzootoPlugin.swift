@@ -35,14 +35,18 @@ import UserNotifications
     switch (call.method)
         {
           case AppConstant.IZ_PLUGIN_INITIALISE:
-            let map = call.arguments as? Dictionary<String, String>
-            let appId = map?[AppConstant.IZ_PLUGIN_APP_ID]
-            let iZootoInitSettings = [AppConstant.IZ_PLUGIN_AUTO_PROMPT: true,AppConstant.IZ_PLUGIN_IS_WEBVIEW: true,AppConstant.IZ_PLUGIN_PROVISIONAL_AUTH:false]
-            iZooto.initialisation(izooto_id: appId!, application: UIApplication.shared,  iZootoInitSettings:iZootoInitSettings)
-            iZooto.notificationOpenDelegate = self
-            iZooto.landingURLDelegate = self
-            UNUserNotificationCenter.current().delegate = self
-            iZooto.setPluginVersion(pluginVersion: AppConstant.IZ_PLUGIN_VERSION)
+              guard let map = call.arguments as? Dictionary<String, String>,
+                let appId = map[AppConstant.IZ_PLUGIN_APP_ID] else {
+              print("Error: 'map' is not a Dictionary<String, String> or 'appId' is nil")
+              return
+              }
+          
+              let iZootoInitSettings = [AppConstant.IZ_PLUGIN_AUTO_PROMPT: true,AppConstant.IZ_PLUGIN_IS_WEBVIEW: true,AppConstant.IZ_PLUGIN_PROVISIONAL_AUTH:false]
+              iZooto.setPluginVersion(pluginVersion: AppConstant.IZ_PLUGIN_VERSION)
+              iZooto.initialisation(izooto_id: appId, application: UIApplication.shared,  iZootoInitSettings:iZootoInitSettings)
+              iZooto.notificationOpenDelegate = self
+              iZooto.landingURLDelegate = self
+              UNUserNotificationCenter.current().delegate = self
             
             break;
             
@@ -51,22 +55,32 @@ import UserNotifications
             break;
             
           case AppConstant.IZ_PLUGIN_ADD_EVENTS:
-            let map = call.arguments as? Dictionary<String, String>
-            let eventName = map?[AppConstant.IZ_PLUGIN_EVENT_NAME]
-            iZooto.addEvent(eventName: eventName!, data:map!)
+           if let map = call.arguments as? Dictionary<String, String>,
+             let eventName = map[AppConstant.IZ_PLUGIN_EVENT_NAME] {
+              iZooto.addEvent(eventName: eventName, data: map)
+          } else {
+              print("Error: 'map' is not a Dictionary<String, String> or 'eventName' is nil")
+          }
             break;
          case AppConstant.IZ_PLUGIN_ADD_USER_PROPERTIES:
-            let userPropertiesData = call.arguments as? Dictionary<String, String>
-            let keyName = userPropertiesData?[AppConstant.IZ_PLUGIN_PROPERTIES_KEY]
-            let valueName = userPropertiesData?[AppConstant.IZ_PLUGIN_PROPERTIES_VALUE]
-            let data = [keyName: valueName] as? [String : String]
-            iZooto.addUserProperties(data: data!)
+           if let userPropertiesData = call.arguments as? Dictionary<String, String>,
+              let keyName = userPropertiesData[AppConstant.IZ_PLUGIN_PROPERTIES_KEY],
+              let valueName = userPropertiesData[AppConstant.IZ_PLUGIN_PROPERTIES_VALUE] {
+              let data = [keyName: valueName]
+              iZooto.addUserProperties(data: data)
+          } else {
+              print("Error: 'call.arguments' is not a Dictionary<String, String> or 'keyName' or 'valueName' is nil")
+          }
             break;
          case AppConstant.IZ_PLUGIN_SET_SUBSCRIPTION:
-            let map = call.arguments as? Dictionary<String, Any>
-            let enable: Bool = (map?[AppConstant.IZ_PLUGIN_IS_ENABLE] as? Bool)!
-            iZooto.setSubscription(isSubscribe: enable)
-            break;
+              guard let enable = call.arguments as? Bool else {
+              print("Error: 'enable' is not a Boolean")
+              return
+             }
+            print(enable)
+
+              iZooto.setSubscription(isSubscribe: enable)
+       break;
             
          case AppConstant.IZ_PLUGIN_NAVIGATE_TO_SETTING :
             iZooto.navigateToSettings()
@@ -75,13 +89,30 @@ import UserNotifications
             let map = call.arguments as? Dictionary<String, Any>
             let enable: Bool = (map?[AppConstant.IZ_PLUGIN_IS_PAGINATION] as? Bool ?? false)
             iZooto.getNotificationFeed(isPagination: enable){ (jsonString, error) in
-                if let error = error {
+                if error != nil {
                     result(AppConstant.IZ_PLUGIN_NO_MORE_DATA)
                 } else if let jsonString = jsonString {
                     result(jsonString)
                 }
             }
             break;
+
+        case AppConstant.IZ_GOOGLE_ONE_TAP :
+           let map = call.arguments as? Dictionary<String, Any>
+          guard map != nil else {
+              print("Error: 'map' is nil")
+              return
+          }
+          guard let emailData = map?["email"] as? String, !emailData.isEmpty else {
+              print("Error: 'email' is nil or blank")
+              return
+          }
+          let fullName = map?["fName"] as? String
+          let lName = map?["lName"] as? String
+          iZooto.syncUserDetailsEmail(email: emailData, fName: fullName ?? "", lName: lName ?? "")
+       break;
+
+
          default:
             result(AppConstant.IZ_PLUGIN_NOT_RESULT)
             break;

@@ -12,7 +12,7 @@ class AppConstant
     static var IZ_PLUGIN_INITIALISE = "iOSInit"
     static var IZ_PLUGIN_ADD_EVENTS = "addEvents"
     static var IZ_PLUGIN_ADD_USER_PROPERTIES = "addUserProperties"
-    static var IZ_PLUGIN_SET_SUBSCRIPTION = "setSubscription"
+    static var IZ_PLUGIN_SET_SUBSCRIPTION = "iZootoSetSubscription"
     static var IZ_PLUGIN_NAVIGATE_TO_SETTING = "navigateToSettings"
     static var IZ_PLUGIN_GET_NOTIFICATION_FEED = "getNotificationFeed"
     static var IZ_PLUGIN_GET_PLATEFORM_VERSION = "getPlatformVersion"
@@ -27,11 +27,17 @@ class AppConstant
     static var IZ_PLUGIN_AUTO_PROMPT = "auto_prompt"
     static var IZ_PLUGIN_IS_WEBVIEW = "nativeWebview"
     static var IZ_PLUGIN_PROVISIONAL_AUTH = "provisionalAuthorization";
-    static var IZ_PLUGIN_VERSION = "fv_2.5.2"
+    static var IZ_PLUGIN_VERSION = "fv_2.5.3"
     static var IZ_PLUGIN_EVENT_NAME = "eventName"
     static var IZ_PLUGIN_PROPERTIES_KEY = "key"
     static var IZ_PLUGIN_PROPERTIES_VALUE = "value"
     static var IZ_PLUGIN_IS_PAGINATION = "isPagination" //enable
     static var IZ_PLUGIN_IS_ENABLE = "enable"
     static var IZ_PLUGIN_IS_NONE = "NONE"
+    static var IZ_GOOGLE_ONE_TAP = "syncUserDetails"
+
+
+
+
+
 }
