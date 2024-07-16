@@ -268,7 +268,7 @@ public class IzootoPlugin implements FlutterPlugin, MethodChannel.MethodCallHand
                     if (Build.VERSION.SDK_INT >= 33) {
                         iZooto.promptForPushNotifications();
                     } else {
-                        Log.e(iZootoConstant.IZ_NOTIFICATION_PERMISSION, iZootoConstant.IZ_API_LEVEL_ERROR);
+                        Log.i(iZootoConstant.IZ_NOTIFICATION_PERMISSION, iZootoConstant.IZ_API_LEVEL_ERROR);
                     }
                 } catch (Exception ex) {
                     Log.v(iZootoConstant.IZ_PLUGIN_EXCEPTION, ex.toString());
