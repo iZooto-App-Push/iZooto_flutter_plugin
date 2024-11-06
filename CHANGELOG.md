@@ -60,6 +60,7 @@
 ## 2.5.2 34th release(Support FCM Receiver and Google one tap)[ 19 June 2024]
 ## 2.5.3 35th release(iOS -Support FCM Receiver and Google one tap)[ 03 July 2024]
 ## 2.5.5 36th release(Get Notification Feed APi issues fixed)[ 24 Sept 2024]
+## 2.5.6 37th release(HMS issues fixed)[ 06 Nov 2024]
 
 
 
