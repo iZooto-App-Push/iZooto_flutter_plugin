@@ -1,0 +1,2 @@
+/Users/amitgupta/Documents/AndroidSDK/flutterSDK/Plugins/iZooto_flutter_plugin/example/android/app/.cxx/Debug/az2844s1/x86/CMakeFiles/edit_cache.dir
+/Users/amitgupta/Documents/AndroidSDK/flutterSDK/Plugins/iZooto_flutter_plugin/example/android/app/.cxx/Debug/az2844s1/x86/CMakeFiles/rebuild_cache.dir
