@@ -30,7 +30,7 @@ apply plugin: 'com.android.library'
 android {
     namespace 'com.izooto_plugin' // <-- Add this line
 
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         minSdkVersion 21
@@ -40,7 +40,7 @@ android {
     }
 }
 dependencies {
-    implementation 'com.izooto:android-sdk:3.1.2'
+    implementation 'com.izooto:android-sdk:3.1.3'
     implementation('androidx.work:work-runtime:2.8.1')
     implementation 'androidx.browser:browser:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'

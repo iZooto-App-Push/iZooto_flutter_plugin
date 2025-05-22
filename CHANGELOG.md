@@ -62,7 +62,7 @@
 ## 2.5.5 36th release(Get Notification Feed APi issues fixed)[ 24 Sept 2024]
 ## 2.5.6 37th release(HMS issues fixed)[ 06 Nov 2024]
 ## 2.6.0 38th release(Support Custom Chrome tab & iOS Bug fixed )[ 03 April 2025]
-
+## 2.6.1 39th release(User-Properties bug fixed)[ 22 May 2025]
 
 
 

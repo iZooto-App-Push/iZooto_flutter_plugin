@@ -21,7 +21,7 @@ To get started, sign up [here](https://panel.izooto.com/).
 
 ```yaml
 dependencies:
-izooto_plugin: ^2.5.6
+izooto_plugin: ^2.6.1
 ```
 
 - Run `flutter packages get` to install the SDK
@@ -46,7 +46,7 @@ For reference, we have uploaded a demo project with the latest SDK in the <code>
 
 #### Supports:
 
-* Tested and validated from Android 5.0 (API level 21) to Android 13 (API level 33).
+* Tested and validated from Android 5.0 (API level 21) to Android 15 (API level 35).
 * Tested and validated from iOS 12 to iOS 15+.
 
 
