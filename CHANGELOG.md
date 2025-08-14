@@ -63,6 +63,8 @@
 ## 2.5.6 37th release(HMS issues fixed)[ 06 Nov 2024]
 ## 2.6.0 38th release(Support Custom Chrome tab & iOS Bug fixed )[ 03 April 2025]
 ## 2.6.1 39th release(User-Properties bug fixed)[ 22 May 2025]
+## 2.6.2 40th release(Update target version and compile SDK version )[ 14 August 2025]
+
 
 
 
