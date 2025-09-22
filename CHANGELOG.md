@@ -64,6 +64,7 @@
 ## 2.6.0 38th release(Support Custom Chrome tab & iOS Bug fixed )[ 03 April 2025]
 ## 2.6.1 39th release(User-Properties bug fixed)[ 22 May 2025]
 ## 2.6.2 40th release(Update target version and compile SDK version )[ 14 August 2025]
+## 2.6.3 41th release(Notification prompt issues fixed and iOS Mediaiton issues fixed)[ 22 September 2025]
 
 
 
