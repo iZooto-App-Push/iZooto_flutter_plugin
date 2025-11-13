@@ -4,7 +4,7 @@ version: 2.6.4
 homepage: https://github.com/izooto-mobile-sdk/iZooto_flutter_plugin.git
 
 environment:
-  sdk: ">=2.15.0 <3.0.0"
+  sdk: ">=2.15.0 <4.0.0"
   flutter: ">=2.0.0"
 
 dependencies:
