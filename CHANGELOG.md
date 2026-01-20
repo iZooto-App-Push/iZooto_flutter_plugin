@@ -67,6 +67,7 @@
 ## 2.6.3 41th release(Notification prompt issues fixed and iOS Mediaiton issues fixed)[ 22 September 2025]
 ## 2.6.4 42th release(Android -Prompt Permission crash issues fixed and Ads restriction filter key Added)[ 13 November 2025]
 ## 2.6.5 43th release(Support Latest Android SDK)[ 10 December 2025]
+## 2.7.0 44th release(Support Latest Android SDK-Multi Pids support)[ 20 January 2026]
 
 
 
