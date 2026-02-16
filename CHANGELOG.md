@@ -69,6 +69,7 @@
 ## 2.6.5 43th release(Support Latest Android SDK)[ 10 December 2025]
 ## 2.7.0 44th release(Support Latest Android SDK-Multi Pids support)[ 20 January 2026]
 ## 2.7.1 45th release(Support Latest Android SDK-Multi Pids support)[ 20 January 2026]
+## 2.7.2 46th release(Support addTag and removeTag Feature)[ 15 February 2026]
 
 
 
