@@ -15,7 +15,7 @@ android {
         disable 'InvalidPackage'
     }
     defaultConfig {
-        minSdkVersion 21
+        minSdkVersion 23
         //noinspection EditedTargetSdkVersion
         targetSdkVersion 35
         versionCode 1

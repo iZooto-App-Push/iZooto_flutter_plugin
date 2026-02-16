@@ -63,7 +63,9 @@ class _HomeState extends State<Home> {
                     Navigator.push(context,
                     MaterialPageRoute(builder: (context) => const SecondRoute()));
                     // iZooto.navigateToSettings();
-                    iZooto.setSubscription(false);
+                   // iZooto.setSubscription(false);
+                      iZooto.addTag(["Delhi"]);
+
                     print("Unsuscribe false");
                   },
               ),
@@ -180,7 +182,7 @@ class SecondRoute extends StatelessWidget {
           body: Center(
             child: ElevatedButton(
               onPressed: () {
-                iZooto.setSubscription(true);
+               // iZooto.setSubscription(true);
                 Navigator.pop(context);
                 print("Subscribe True");
               },
