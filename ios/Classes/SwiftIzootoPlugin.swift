@@ -77,7 +77,6 @@ import UserNotifications
               print("Error: 'enable' is not a Boolean")
               return
              }
-            print(enable)
 
               iZooto.setSubscription(isSubscribe: enable)
        break;
@@ -110,8 +109,37 @@ import UserNotifications
           let fullName = map?["fName"] as? String
           let lName = map?["lName"] as? String
           iZooto.syncUserDetailsEmail(email: emailData, fName: fullName ?? "", lName: lName ?? "")
-       break;
+          break;
+        case AppConstant.IZ_ADD_TAGS:
+             guard let tags = call.arguments as? [String] else {
+                 print("iZooto addTag failed: Arguments not [String]")
+              return
+              }
 
+              let validTags = tags.filter { !$0.trimmingCharacters(in: .whitespaces).isEmpty }
+
+              if validTags.isEmpty {
+                  print("iZooto addTag failed: No valid tags")
+                return
+               }
+
+               iZooto.addTag(validTags)
+               break;
+        case AppConstant.IZ_REMOVE_TAG:
+               guard let tags = call.arguments as? [String] else {
+                 print("iZooto Remove Tag failed: Arguments not [String]");
+                 return
+              }
+
+              let validTags = tags.filter { !$0.trimmingCharacters(in: .whitespaces).isEmpty }
+
+              if validTags.isEmpty {
+                  print("iZooto Remove failed: No valid tags");
+                return;
+               }
+               iZooto.removeTag(validTags);
+
+            break;
 
          default:
             result(AppConstant.IZ_PLUGIN_NOT_RESULT)

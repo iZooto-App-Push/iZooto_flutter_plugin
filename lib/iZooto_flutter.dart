@@ -195,14 +195,68 @@ class iZooto {
     await _channel.invokeMethod(
         EVENTS, {KEYEVENTNAME: eventName, KEYEVENTVALUE: eventValue});
   }
- 
-  static Future<void> addTag(List<String> topicName) async {
-    await _channel.invokeMethod(ADDTAG, topicName);
+static Future<void> addTag(List<String>? topicName) async {
+  try {
+    // 1️⃣ Null check
+    if (topicName == null) {
+      debugPrint("iZooto addTag failed: topicName is null");
+      return;
+    }
+
+    // 2️⃣ Remove empty or invalid tags
+    final validTags = topicName
+        .where((tag) => tag.trim().isNotEmpty)
+        .toList();
+
+    if (validTags.isEmpty) {
+      debugPrint("iZooto addTag failed: No valid tags provided");
+      return;
+    }
+
+    debugPrint("iZooto addTag: $validTags");
+
+    // 3️⃣ Call native
+    await _channel.invokeMethod(ADDTAG, validTags);
+
+  } on PlatformException catch (e) {
+    debugPrint("iZooto addTag PlatformException: ${e.message}");
+  } catch (e) {
+    debugPrint("iZooto addTag Unknown Error: $e");
   }
+}
 
   static Future<void> removeTag(List<String> topicName) async {
+try {
+    // 1️⃣ Null check
+    if (topicName == null) {
+      debugPrint("iZooto RemoveTag failed: topicName is null");
+      return;
+    }
+
+    // 2️⃣ Remove empty or invalid tags
+    final validTags = topicName
+        .where((tag) => tag.trim().isNotEmpty)
+        .toList();
+
+    if (validTags.isEmpty) {
+      debugPrint("iZooto RemoveTag failed: No valid tags provided");
+      return;
+    }
+
+    debugPrint("iZooto RemoveTag: $validTags");
+
+    // 3️⃣ Call native
     await _channel.invokeMethod(REMOVETAG, topicName);
+
+  } on PlatformException catch (e) {
+    debugPrint("iZooto RemoveTag PlatformException: ${e.message}");
+  } catch (e) {
+    debugPrint("iZooto RemoveTag Unknown Error: $e");
   }
+
+  }
+
+
 
   static Future<void> handleNotification(dynamic data) async {
     await _channel.invokeMethod(HANDLENOTIFICATION,

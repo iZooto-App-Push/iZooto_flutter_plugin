@@ -27,7 +27,7 @@ class AppConstant
     static var IZ_PLUGIN_AUTO_PROMPT = "auto_prompt"
     static var IZ_PLUGIN_IS_WEBVIEW = "nativeWebview"
     static var IZ_PLUGIN_PROVISIONAL_AUTH = "provisionalAuthorization";
-    static var IZ_PLUGIN_VERSION = "fv_2.7.1"
+    static var IZ_PLUGIN_VERSION = "fv_2.7.2"
     static var IZ_PLUGIN_EVENT_NAME = "eventName"
     static var IZ_PLUGIN_PROPERTIES_KEY = "key"
     static var IZ_PLUGIN_PROPERTIES_VALUE = "value"
@@ -35,6 +35,8 @@ class AppConstant
     static var IZ_PLUGIN_IS_ENABLE = "enable"
     static var IZ_PLUGIN_IS_NONE = "NONE"
     static var IZ_GOOGLE_ONE_TAP = "syncUserDetails"
+    static var  IZ_ADD_TAGS = "iZootoAddTags";
+    static var  IZ_REMOVE_TAG="iZootoRemoveTags";
 
 
 
