@@ -71,6 +71,7 @@
 ## 2.7.1 45th release(Support Latest Android SDK-Multi Pids support)[ 20 January 2026]
 ## 2.7.2 46th release(Support addTag and removeTag Feature)[ 15 February 2026]
 ## 2.7.3 47th release(Bug Fixed - Webviewlistener is not working when language switch)[ 20 February 2026]
+## 2.7.4 48th release(Bug Fixed - User Properites Data Type issues Fixed)[ 17 March 2026]
 
 
 
