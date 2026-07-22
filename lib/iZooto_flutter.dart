@@ -80,21 +80,33 @@ class iZooto {
     });
 
   }
-
- // This method supports on all plateform(Android/iOS)
-  static addUserProperty(String key, String value) async {
-    if(Platform.isIOS){
+  static addUserProperty(String key, dynamic value) async {
+  if (Platform.isIOS) {
     _channel.invokeMethod(ADDUSERPROPERTIES, {
       'key': key,
       'value': value,
     });
-    }else{
-        var addValue = HashMap<String, Object>();
-        addValue[key] = value;
-       _channel.invokeMethod(PROPERTIES, addValue);
-
-    }
+  } else {
+    Map<String, dynamic> addValue = {};
+    addValue[key] = value;
+    _channel.invokeMethod(PROPERTIES, addValue);
   }
+}
+
+ // This method supports on all plateform(Android/iOS)
+  // static addUserProperty(String key, String value) async {
+  //   if(Platform.isIOS){
+  //   _channel.invokeMethod(ADDUSERPROPERTIES, {
+  //     'key': key,
+  //     'value': value,
+  //   });
+  //   }else{
+  //       var addValue = HashMap<String, Object>();
+  //       addValue[key] = value;
+  //      _channel.invokeMethod(PROPERTIES, addValue);
+
+  //   }
+  // }
   // this method is legecy, it will be deprecrated asap
   static addUserProperties(String key, String value) async {
     _channel.invokeMethod(ADDUSERPROPERTIES, {

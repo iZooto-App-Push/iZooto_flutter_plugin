@@ -72,6 +72,7 @@
 ## 2.7.2 46th release(Support addTag and removeTag Feature)[ 15 February 2026]
 ## 2.7.3 47th release(Bug Fixed - Webviewlistener is not working when language switch)[ 20 February 2026]
 ## 2.7.4 48th release(Bug Fixed - User Properites Data Type issues Fixed)[ 17 March 2026]
+## 2.8.0 49th release(User Properties restriction and multiple subscriber hits)[ 22 July 2026]
 
 
 
