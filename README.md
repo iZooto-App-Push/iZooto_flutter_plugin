@@ -3,15 +3,17 @@
 </p>
 
 # iZooto Flutter SDK
+
 [![pub package](https://img.shields.io/pub/v/izooto_plugin.svg)](https://pub.dev/packages/izooto_plugin)
 <a href="https://github.com/iZooto-App-Push/iZooto_flutter_plugin/releases">
-    <img src="https://img.shields.io/github/v/release/iZooto-App-Push/iZooto_flutter_plugin.svg" />
+<img src="https://img.shields.io/github/v/release/iZooto-App-Push/iZooto_flutter_plugin.svg" />
 </a>
 
 ## 👋 Introduction
+
 [iZooto](https://www.izooto.com) provides push notification service for mobile apps. This plugin makes it easy to implement push notifications on your Android and/or iOS apps built on the Flutter framework.
 
-For more information check out our [website](https://www.izooto.com/ "iZooto")  and  [documentation](https://help.izooto.com/docs/flutter-sdk-setup "Flutter SDK Setup").
+For more information check out our [website](https://www.izooto.com/ "iZooto") and [documentation](https://help.izooto.com/docs/flutter-sdk-setup "Flutter SDK Setup").
 
 To get started, sign up [here](https://panel.izooto.com/).
 
@@ -21,7 +23,7 @@ To get started, sign up [here](https://panel.izooto.com/).
 
 ```yaml
 dependencies:
-izooto_plugin: ^2.7.4
+izooto_plugin: ^2.8.1-dev
 ```
 
 - Run `flutter packages get` to install the SDK
@@ -46,11 +48,9 @@ For reference, we have uploaded a demo project with the latest SDK in the <code>
 
 #### Supports:
 
-* Tested and validated from Android 5.0 (API level 21) to Android 15 (API level 35).
-* Tested and validated from iOS 12 to iOS 15+.
-
+- Tested and validated from Android 5.0 (API level 21) to Android 15 (API level 35).
+- Tested and validated from iOS 12 to iOS 15+.
 
 ## ❓Questions
 
- If you have questions or concerns, you can reach out to the iZooto support team from the iZooto Dashboard.
-
+If you have questions or concerns, you can reach out to the iZooto support team from the iZooto Dashboard.

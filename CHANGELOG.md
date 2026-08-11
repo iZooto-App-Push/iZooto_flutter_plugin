@@ -1,11 +1,18 @@
 ## 0.0.1 First release [9 feb2-21]
+
 ## 0.0.2 Second release (Android Support) [15 feb 2021]
+
 ## 0.0.3 Third release (Bug Fixes -> Platform issue)[16 Feb 2021]
+
 ## 0.0.4 Third release (Bug Fixes -> Platform issue)[16 April 2021]
+
 ## 1.1.0 Fourth release(Bug Fixes-> Killed state issue )[17 August 2021]
-## 2.0.0 Fift release(Bug Fixes-> Support Android 12 and Null safety )[16  December 2021]
-## 2.0.1 Sixth release(Bug Fixes-> Android 12 )[02  February 2022]
-## 2.0.2 Seventh release(Support the NewsRoom Template on ANdroid 12 )[30  June 2022]
+
+## 2.0.0 Fift release(Bug Fixes-> Support Android 12 and Null safety )[16 December 2021]
+
+## 2.0.1 Sixth release(Bug Fixes-> Android 12 )[02 February 2022]
+
+## 2.0.2 Seventh release(Support the NewsRoom Template on ANdroid 12 )[30 June 2022]
 
 ## 2.0.3 Eighth release(SDK issues)[ 2 August 2022]
 
@@ -48,6 +55,7 @@
 ## 2.3.2 27th release(Support Timer and Persistent Notificaiton tempalte)[ 12 Oct 2023]
 
 ## 2.3.3 28th release(HMS issues fixed)[ 16 Oct 2023]
+
 ## 2.3.4 29th release(Update the latest SDK)[ 21 Nov 2023]
 
 ## 2.4.0 30th release(Support Notification Channel)[ 23 Jan 2024]
@@ -57,41 +65,39 @@
 ## 2.5.0 32th release(Notification Permissio issues fixed and Sender ID issues fixed)[ 06 May 2024]
 
 ## 2.5.1 33th release(Notification Permission issues fixed)[ 04 June 2024]
+
 ## 2.5.2 34th release(Support FCM Receiver and Google one tap)[ 19 June 2024]
+
 ## 2.5.3 35th release(iOS -Support FCM Receiver and Google one tap)[ 03 July 2024]
+
 ## 2.5.5 36th release(Get Notification Feed APi issues fixed)[ 24 Sept 2024]
+
 ## 2.5.6 37th release(HMS issues fixed)[ 06 Nov 2024]
+
 ## 2.6.0 38th release(Support Custom Chrome tab & iOS Bug fixed )[ 03 April 2025]
+
 ## 2.6.1 39th release(User-Properties bug fixed)[ 22 May 2025]
+
 ## 2.6.2 40th release(Update target version and compile SDK version )[ 14 August 2025]
+
 ## 2.6.3 41th release(Notification prompt issues fixed and iOS Mediaiton issues fixed)[ 22 September 2025]
+
 ## 2.6.4 42th release(Android -Prompt Permission crash issues fixed and Ads restriction filter key Added)[ 13 November 2025]
+
 ## 2.6.5 43th release(Support Latest Android SDK)[ 10 December 2025]
+
 ## 2.7.0 44th release(Support Latest Android SDK-Multi Pids support)[ 20 January 2026]
+
 ## 2.7.1 45th release(Support Latest Android SDK-Multi Pids support)[ 20 January 2026]
+
 ## 2.7.2 46th release(Support addTag and removeTag Feature)[ 15 February 2026]
+
 ## 2.7.3 47th release(Bug Fixed - Webviewlistener is not working when language switch)[ 20 February 2026]
+
 ## 2.7.4 48th release(Bug Fixed - User Properites Data Type issues Fixed)[ 17 March 2026]
+
 ## 2.7.5 49th release(User Properties restriction and multiple subscriber hits)[ 22 July 2026]
+
 ## 2.8.0 49th release(User Properties restriction and multiple subscriber hits)[ 22 July 2026]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
+## 2.8.1-dev 50th release(Bug fix and version update)[ 11 August 2026]
