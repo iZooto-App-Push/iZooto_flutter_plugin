@@ -101,3 +101,5 @@
 ## 2.8.0 49th release(User Properties restriction and multiple subscriber hits)[ 22 July 2026]
 
 ## 2.8.1-dev 50th release(Bug fix and version update)[ 11 August 2026]
+
+## 2.8.1-dev1 51th release(Bug fix and version update - Android)[ 12 August 2026]
