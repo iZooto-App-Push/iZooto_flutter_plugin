@@ -138,16 +138,17 @@ public class IzootoPlugin implements FlutterPlugin, MethodChannel.MethodCallHand
 
             case iZootoConstant.IZ_ADD_PROPERTIES:
                 try {
-                        val hashMapUserProperty = call.arguments as? HashMap<String, Any>
-                        if (hashMapUserProperty != null) {
-                            iZooto.addUserProperty(hashMapUserProperty)
-                        } else {
-                            Log.e("UserProperties", "Received null map")
-                        }
-                    } catch (ex: Exception) {
-                        Log.e("UserProperties", "Exception", ex)
+                    if (call.arguments instanceof Map) {
+                        @SuppressWarnings("unchecked")
+                        HashMap<String, Object> hashMapUserProperty =
+                                new HashMap<>((Map<String, Object>) call.arguments);
+                        iZooto.addUserProperty(hashMapUserProperty);
+                    } else {
+                        Log.e(iZootoConstant.IZ_PLUGIN_EXCEPTION, "addUserProperty: received null or invalid map");
                     }
-               
+                } catch (Exception ex) {
+                    Log.v(iZootoConstant.IZ_PLUGIN_EXCEPTION, ex.toString());
+                }
                 break;
 
             case iZootoConstant.IZ_NOTIFICATION_SOUND:
