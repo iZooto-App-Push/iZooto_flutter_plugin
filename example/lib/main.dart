@@ -138,6 +138,13 @@ class _HomeState extends State<Home> {
         // Navigator.of(context).pushNamed('pageTwo');
       }
     } catch (e) {}
+
+// For Android
+iZooto.addUserProperty("pramod rai", "Datability");
+
+// For iOS
+//iZooto.addUserProperties("Gender","Male");
+
   }
 }
 

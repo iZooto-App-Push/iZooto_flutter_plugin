@@ -21,7 +21,7 @@ android {
         versionCode 1
         versionName '1.0'
         manifestPlaceholders = [
-                izooto_app_id : "aeb7d82c8dcc0bcebc9684c2ad8a4a384980e640"//"6eb1e6b88657384930c4e6872fae6105f9c51e1c"
+                izooto_app_id : "9757aca6148bf8c8761f22fd1f5a3a51a7bc2086"
         ]
         multiDexEnabled true
     }
