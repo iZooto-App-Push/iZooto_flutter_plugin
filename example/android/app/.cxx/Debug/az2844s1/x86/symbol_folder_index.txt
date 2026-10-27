@@ -1,1 +1,0 @@
-/Users/amitgupta/Documents/AndroidSDK/flutterSDK/Plugins/iZooto_flutter_plugin/example/build/app/intermediates/cxx/Debug/az2844s1/obj/x86
