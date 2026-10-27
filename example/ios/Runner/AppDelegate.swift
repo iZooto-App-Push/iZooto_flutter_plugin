@@ -2,7 +2,7 @@ import UIKit
 import Flutter
 import iZootoiOSSDK
 
-@UIApplicationMain
+@main
 @objc class AppDelegate: FlutterAppDelegate, iZootoNotificationOpenDelegate,iZootoLandingURLDelegate {
     func onNotificationOpen(action: Dictionary<String, Any>) {
         
