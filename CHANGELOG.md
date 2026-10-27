@@ -104,4 +104,4 @@
 
 ## 2.8.1-dev1 51th release(Bug fix and version update - Android)[ 12 August 2026]
 
-## 2.8.2 52th release(Bug fix and version update - Android)[ 10 September 2026]
+## 2.8.3 53th release(Bug fix and version update - Android)[ 16 September 2026]
