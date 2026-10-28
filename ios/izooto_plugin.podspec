@@ -4,11 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'izooto_plugin'
-<<<<<<< Updated upstream
-  s.version          = '2.8.3'
-=======
   s.version          = '2.8.4'
->>>>>>> Stashed changes
   s.summary          = 'The iZooto Flutter SDK'
   s.description      = 'Allows you to easily add iZooto to your Flutter projects, to make sending and handling push notifications easy.'
   s.homepage         = 'http://izooto.com'

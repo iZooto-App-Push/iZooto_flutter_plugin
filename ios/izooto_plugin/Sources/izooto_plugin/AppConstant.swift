@@ -4,8 +4,8 @@
 //
 //
 import Foundation
-class AppConstant
-{
+
+class AppConstant {
     static var IZ_PLUGIN_APP_NAME = "iZooto-Flutter-Native-Plugin"
     static var IZ_PLUGIN_NAME = "izooto_flutter"
     static var IZ_PLUGIN_INITIALISE = "iOSInit"
@@ -25,15 +25,15 @@ class AppConstant
     static var IZ_PLUGIN_APP_ID = "appId"
     static var IZ_PLUGIN_AUTO_PROMPT = "auto_prompt"
     static var IZ_PLUGIN_IS_WEBVIEW = "nativeWebview"
-    static var IZ_PLUGIN_PROVISIONAL_AUTH = "provisionalAuthorization";
-    static var IZ_PLUGIN_VERSION = "fv_2.8.3"
+    static var IZ_PLUGIN_PROVISIONAL_AUTH = "provisionalAuthorization"
+    static var IZ_PLUGIN_VERSION = "fv_2.8.4"
     static var IZ_PLUGIN_EVENT_NAME = "eventName"
     static var IZ_PLUGIN_PROPERTIES_KEY = "key"
     static var IZ_PLUGIN_PROPERTIES_VALUE = "value"
-    static var IZ_PLUGIN_IS_PAGINATION = "isPagination" //enable
+    static var IZ_PLUGIN_IS_PAGINATION = "isPagination"  //enable
     static var IZ_PLUGIN_IS_ENABLE = "enable"
     static var IZ_PLUGIN_IS_NONE = "NONE"
     static var IZ_GOOGLE_ONE_TAP = "syncUserDetails"
-    static var  IZ_ADD_TAGS = "iZootoAddTags";
-    static var  IZ_REMOVE_TAG="iZootoRemoveTags";
+    static var IZ_ADD_TAGS = "iZootoAddTags"
+    static var IZ_REMOVE_TAG = "iZootoRemoveTags"
 }
