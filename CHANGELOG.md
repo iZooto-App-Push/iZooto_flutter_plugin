@@ -107,3 +107,6 @@
 ## 2.8.3 53th release(Bug fix and version update - Android)[ 16 September 2026]
 
 ## 2.8.4 54th release(iOS - flutter spm support added)[ 28 October 2026]
+
+## 2.8.5 55th release(Bug fix and version update av_3.5.7 - Android)[ 25 November 2026]
+
