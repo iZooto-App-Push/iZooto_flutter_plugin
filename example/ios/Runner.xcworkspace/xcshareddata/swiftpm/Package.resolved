@@ -1,0 +1,15 @@
+{
+  "originHash" : "2f59e10a18e657d3733322a4550c46f6e907955f11fb4ba8b7e6644e3015d0e4",
+  "pins" : [
+    {
+      "identity" : "izooto-xcframework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/iZooto-App-Push/iZooto-XCFramework",
+      "state" : {
+        "revision" : "e8cb13044a3894455d306c7a5dfd27b6d56be788",
+        "version" : "3.2.4"
+      }
+    }
+  ],
+  "version" : 3
+}
